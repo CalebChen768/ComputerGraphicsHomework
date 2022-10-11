@@ -138,9 +138,9 @@ points= np.array([[0,0,0,1],
                 
 #获得透视移动后的点和投影后的点
 #per_points=one_point_perspective(6,5,1,view_point,points)
-#per_points=two_point_perspective(6,5,1,40,view_point,points)
+#per_points=two_point_perspective(3,3,2,60,view_point,points)
 #透视移动后的点
-per_points=three_point_perspective(1,-3,3,45,30,view_point,points)
+per_points=three_point_perspective(3,3,2,60,60,view_point,points)
 #投影后的点
 pro_points=projection_trans(view_point,per_points)
 #转为笛卡尔坐标系
